@@ -14,14 +14,20 @@ export function commonMetaData({
   return {
     title,
     description,
-    icons: [{ rel: "icon", url: "/favicon.ico" }],
+    icons: [
+      {
+        rel: "icon",
+        url: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='10 0 100 100'><text y='.90em' font-size='90'>🧪</text></svg>",
+        type: "image/svg+xml",
+      },
+    ],
     authors: [{ name: "@pyyupsk" }],
-    metadataBase: new URL("https://pyyupsk.vercel.app"),
+    metadataBase: new URL("https://regex.pyyupsk.vercel.app"),
     openGraph: {
       description,
       title,
-      url: "https://pyyupsk.vercel.app",
-      siteName: "pyyupsk.vercel.app",
+      url: "https://regex.pyyupsk.vercel.app",
+      siteName: "regex.pyyupsk.vercel.app",
       type: "website",
     },
     robots: {
