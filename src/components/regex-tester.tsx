@@ -130,7 +130,7 @@ export function RegexTester() {
                 </p>
               )}
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="md flex flex-col space-y-2 md:flex-row md:items-center md:space-x-4 md:space-y-0">
               {[
                 { id: "global", label: "Global (g)" },
                 { id: "caseInsensitive", label: "Case Insensitive (i)" },
@@ -183,7 +183,7 @@ export function RegexTester() {
         </CardHeader>
         <CardContent>
           <Tabs defaultValue="Basic Characters">
-            <TabsList className="mb-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <TabsList className="mb-4 hidden md:grid md:grid-cols-3 lg:grid-cols-5">
               {Object.keys(cheatsheet).map((category) => (
                 <TabsTrigger
                   key={category}
@@ -194,6 +194,13 @@ export function RegexTester() {
                 </TabsTrigger>
               ))}
             </TabsList>
+            <div className="mb-4 flex flex-wrap gap-2 md:hidden">
+              {Object.keys(cheatsheet).map((category) => (
+                <Button key={category} variant="outline">
+                  {category}
+                </Button>
+              ))}
+            </div>
             {Object.entries(cheatsheet).map(([category, items]) => (
               <TabsContent key={category} value={category}>
                 <Table>

@@ -18,12 +18,8 @@ Easily test and learn regular expressions with our interactive Regex Tester. Whe
 - **Copy and Add Patterns**  
   Copy regex patterns directly to your clipboard or add them to your regex string with just a click.
 
-<!--
-TODO:
-
 - **Mobile-Responsive**  
   Enjoy seamless usability across devices with a mobile-friendly layout.
--->
 
 ## Preview
 
